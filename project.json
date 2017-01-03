@@ -3,7 +3,7 @@
 
   "dependencies": {
     "Microsoft.NETCore.App": {
-      "version": "1.0.1",
+      "version": "1.1.0",
       "type": "platform"
     },
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",
@@ -44,7 +44,13 @@
   "buildOptions": {
     "debugType": "portable",
     "emitEntryPoint": true,
-    "preserveCompilationContext": true
+    "preserveCompilationContext": true,
+    "compile": {
+        "exclude": ["node_modules","wwwroot"]
+    },
+     "embed": {
+        "exclude":  ["node_modules","wwwroot"]
+      }
   },
 
   "runtimeOptions": {
@@ -62,7 +68,6 @@
   },
 
   "scripts": {
-    "prepublish": [ "npm install", "bower install", "gulp clean", "gulp min" ],
     "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]
   },
 

@@ -8,3 +8,9 @@ create a proxy on azure: http://geekswithblogs.net/shaunxu/archive/2014/07/04/us
 
 
 using win server 2012 to build a VPN : http://edi.wang/Post/2014/3/9/setup-sstp-windows-azure
+
+
+exclude files when building this pro: https://github.com/aspnet/Home/issues/1418
+
+ignore files when using git add : git rm -r wwwroot/
+
