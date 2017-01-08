@@ -12,5 +12,5 @@ using win server 2012 to build a VPN : http://edi.wang/Post/2014/3/9/setup-sstp-
 
 exclude files when building this pro: https://github.com/aspnet/Home/issues/1418
 
-ignore files when using git add : git rm -r wwwroot/
+ignore files when using git add : git rm -r --cached wwwroot/
 
